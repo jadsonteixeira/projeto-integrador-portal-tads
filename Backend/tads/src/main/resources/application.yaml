@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: tads
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db_proint_tads
+    username: postgres
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+        use_sql_comments: true
